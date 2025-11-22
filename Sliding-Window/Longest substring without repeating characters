@@ -23,3 +23,33 @@ class Solution {
         return maxLen;
     }
 }
+
+//Now return the substring also.
+
+class Solution {
+    public String lengthOfLongestSubstring(String s) {
+        int left = 0;
+        int maxLen = 0;
+        int startIndex = 0;  // Start index of best substring
+        
+        Map<Character, Integer> map = new HashMap<>();
+
+        for (int right = 0; right < s.length(); right++) {
+            char ch = s.charAt(right);
+
+            if (map.containsKey(ch) && map.get(ch) >= left) {
+                left = map.get(ch) + 1;
+            }
+
+            map.put(ch, right);
+
+            // If we found a longer substring, store the start position
+            if (right - left + 1 > maxLen) {
+                maxLen = right - left + 1;
+                startIndex = left;
+            }
+        }
+
+        return s.substring(startIndex, startIndex + maxLen);
+    }
+}
