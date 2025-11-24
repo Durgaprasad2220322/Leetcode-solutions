@@ -1,0 +1,63 @@
+EASY Sliding Window Problems
+
+
+1. 219 — Contains Duplicate II
+Window size = k → check duplicates inside window
+
+2. 643 — Maximum Average Subarray I
+Fixed window size → sum of k elements
+
+3. 121 — Best Time to Buy and Sell Stock
+Sliding minimum window (conceptual sliding window)
+
+
+
+🔥 MEDIUM — Core Sliding Window Problems
+
+
+
+3. 3 — Longest Substring Without Repeating Characters
+Dynamic sliding window + HashSet
+
+4. 209 — Minimum Size Subarray Sum
+Variable window shrinking when sum ≥ target
+
+5. 424 — Longest Repeating Character Replacement
+Sliding window + frequency + allowed replacements
+
+6. 438 — Find All Anagrams in a String
+Fixed-size window + character frequency matching
+
+7. 567 — Permutation in String
+Similar to 438 but return boolean
+
+8. 1004 — Max Consecutive Ones III
+Window with max K flips → expand and shrink
+
+9. 904 — Fruit Into Baskets
+Longest substring with at most 2 types → sliding window + map
+
+10. 76 — Minimum Window Substring
+Most important sliding window problem
+(Expand window → shrink until valid)
+
+11. 1493 — Longest Subarray of 1’s After Deleting One Element
+
+12. 930 — Binary Subarrays With Sum
+
+
+
+🔥🔥 HARD Sliding Window Problems
+
+
+
+13. 239 — Sliding Window Maximum
+Sliding window + dequeue (monotonic queue)
+
+14. 727 — Minimum Window Subsequence
+
+15. 992 — Subarrays With K Different Integers
+Double sliding window trick
+
+16. 1248 — Count Number of Nice Subarrays
+Same technique as #992
